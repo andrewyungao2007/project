@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>     
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | WarmConnect</title>
+    <link rel="stylesheet" href="styleMain.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="profile-box">
+        <header class="profile-header">
+            <a href="login.html" class="header-link" title="Log in page">‹</a>
+            <span>My Profile</span>
+            <button type="button" id="logoutBtn" class="logout-btn">
+                Log out
+            </button>
+        </header>
+
+        <section class="profile-info">
+            <div class="profile-top">
+                <div class="profile-picture">👤</div>
+
+                <div class="user-details">
+                    <h2 id="profileName">User Name</h2>
+                    <p id="profileEmail">@user@example.com</p>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div>
+                    <b id="postCount">0</b>
+                    <span>Posts</span>
+                </div>
+
+                <div>
+                    <b id="followerCount">0</b>
+                    <span>Followers</span>
+                </div>
+
+                <div>
+                    <b id="followingCount">0</b>
+                    <span>Following</span>
+                </div>
+            </div>
+
+            <button type="button" class="edit-btn" id="editProfileBtn">
+                Edit Profile
+            </button>
+
+            <div class="bio">
+                <b>Bio</b>
+                <p id="profileBio">
+                </p>
+            </div>
+        </section>
+
+        <nav class="tabs" aria-label="Profile sections">
+            <button type="button" class="tab-btn active"
+                    data-tab="posts">▦ Posts</button>
+            <button type="button" class="tab-btn"
+                    data-tab="saved">🔖 Saved</button>
+        </nav>
+
+        <section class="no-posts" id="postsSection">
+            <div class="image-icon">🖼</div>
+            <h3>No posts yet</h3>
+            <p>Your posts will appear here.</p>
+        </section>
+
+        <section class="no-posts hidden" id="savedSection">
+            <div class="image-icon">🔖</div>
+            <h3>No saved posts</h3>
+            <p>Your saved posts will appear here.</p>
+        </section>
+
+    </main>
+
+</body>
+</html>
